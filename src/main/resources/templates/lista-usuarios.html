@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Lista de Usuarios</title>
+</head>
+<body>
+<h1>Lista de Usuarios</h1>
+<ul>
+    <!-- Iterar sobre la lista de usuarios y mostrarlos -->
+    <li th:each="usuario : ${usuarios}">
+        <span th:text="${usuario.username}"></span>
+    </li>
+</ul>
+</body>
+</html>
